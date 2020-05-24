@@ -1,3 +1,7 @@
+load("//:internal/repository.bzl", _nomad_repository = "nomad_repository")
+
+nomad_repository = _nomad_repository
+
 # Rule nomad_run generates a runner script to execute nomad run with the given
 # job file.
 #
